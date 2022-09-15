@@ -1,3 +1,7 @@
-import numpy as np
 
-#modificacion
+import numpy as np
+from Bio import SeqIO
+
+mRNA=SeqIO.read("NTRK1","genbank")
+
+

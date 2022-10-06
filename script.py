@@ -1,5 +1,6 @@
 from Bio import SeqIO
-from Bio import Seq
+from Bio.Blast import NCBIWWW
+from Bio.Align.Applications import MuscleCommandline
 
 #Recibe una secuencia de ARN y genera los dos ORF que faltan (2 y 3) y los traduce a proteina. RECORDAR que el archivo que importamos nos da la info para el primer ORF.
 def ORFfinder(sec):
@@ -35,6 +36,29 @@ def winner(lista):
 			messi=lista[i]
 			l=len(lista[i])
 	return messi
+
+def callblast(archivo):
+    record = SeqIO.read(archivo, format="fasta")
+    result_handle = NCBIWWW.qblast("blastp","nr", record.format('fasta'),descriptions=100,alignments=100) 
+    blast=open('blast.xml','w')
+    blast.write(result_handle.read())
+    blast.close()
+    return 
+
+def MSA(archivo):
+    #Creo la variable con las alineaciones
+    secuencias_aln=MuscleCommandline(input=archivo)
+
+    #Genero un archivo FASTA del output
+    seq_aln=open('seq_aln.fasta','w')
+    for secuencias_aln in SeqIO.parse(archivo,"fasta"):
+        seq_aln.write(">")
+        seq_aln.write(str(secuencias_aln.id))
+        seq_aln.write("\n")
+        seq_aln.write(str(secuencias_aln.seq))
+        seq_aln.write("\n")
+    seq_aln.close()
+    return 
 
 #Importo archivo .gb (es ADN) 
 DNA=SeqIO.read("NTRK1.gb","genbank")
@@ -75,4 +99,9 @@ DNA.seq=diego
 #Guardo ambas secuencias en formato fasta
 SeqIO.write(DNA,"protein.fasta","fasta")
 
+#Blast
+#callblast("protein.fasta")
 
+#MSA 
+
+MSA("secuencias.fasta")

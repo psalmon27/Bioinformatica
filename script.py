@@ -54,6 +54,8 @@ def MSA(archivo):
     for secuencias_aln in SeqIO.parse(archivo,"fasta"):
         seq_aln.write(">")
         seq_aln.write(str(secuencias_aln.id))
+	seq_aln.write(" ")
+	seq_aln.write(str(secuencias_aln.description))
         seq_aln.write("\n")
         seq_aln.write(str(secuencias_aln.seq))
         seq_aln.write("\n")
@@ -62,7 +64,7 @@ def MSA(archivo):
 
 #Importo archivo .gb (es ADN) 
 DNA=SeqIO.read("NTRK1.gb","genbank")
-#COn reverse_complement() genero la cadena de ARN complementaria
+#Con reverse_complement() genero la cadena de ARN complementaria
 rna_comp=DNA.reverse_complement().seq
 #Transcribo el ADN (cadena lider) a ARN
 DNA.seq=DNA.seq.transcribe()

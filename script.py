@@ -1,6 +1,7 @@
 from Bio import SeqIO
 from Bio.Blast import NCBIWWW
 from Bio.Align.Applications import MuscleCommandline
+import os
 
 #Recibe una secuencia de ARN y genera los dos ORF que faltan (2 y 3) y los traduce a proteina. RECORDAR que el archivo que importamos nos da la info para el primer ORF.
 def ORFfinder(sec):
@@ -28,7 +29,7 @@ def splitter(sec):
 		start=sec.find("M")
 	return ORFs
 
-#Compara los largos de las secuencias dentro de una lista y se queda con la más larga (ESTA!)	
+#Compara los largos de las secuencias dentro de una lista y se queda con la más larga	
 def winner(lista):
 	l=0
 	for i in range(len(lista)):
@@ -46,21 +47,21 @@ def callblast(archivo):
     return 
 
 def MSA(archivo):
-    #Creo la variable con las alineaciones
-    secuencias_aln=MuscleCommandline(input=archivo)
+	#Creo la variable con las alineaciones
+	secuencias_aln=MuscleCommandline(input=archivo)
 
-    #Genero un archivo FASTA del output
-    seq_aln=open('seq_aln.fasta','w')
-    for secuencias_aln in SeqIO.parse(archivo,"fasta"):
-        seq_aln.write(">")
-        seq_aln.write(str(secuencias_aln.id))
-	seq_aln.write(" ")
-	seq_aln.write(str(secuencias_aln.description))
-        seq_aln.write("\n")
-        seq_aln.write(str(secuencias_aln.seq))
-        seq_aln.write("\n")
-    seq_aln.close()
-    return 
+	#Genero un archivo FASTA del output
+	seq_aln=open('seq_aln.fasta','w')
+	for secuencias_aln in SeqIO.parse(archivo,"fasta"):
+		seq_aln.write(">")
+		seq_aln.write(str(secuencias_aln.id))
+		seq_aln.write(" ")
+		seq_aln.write(str(secuencias_aln.description))
+		seq_aln.write("\n")
+		seq_aln.write(str(secuencias_aln.seq))
+		seq_aln.write("\n")
+	seq_aln.close()
+	return 
 
 #Importo archivo .gb (es ADN) 
 DNA=SeqIO.read("NTRK1.gb","genbank")
@@ -107,3 +108,12 @@ SeqIO.write(DNA,"protein.fasta","fasta")
 #MSA 
 
 MSA("secuencias.fasta")
+
+#Uso EMBOSS (función getorf) para calcular los ORFs
+os.system("getorf NTRK1.gb ORFs.fasta")
+
+#Comparo con prosite. Para eso uso las funciones de EMBOSS prosextract y patmatmotifs
+os.system("prosextract ./")
+os.system("patmatmotifs protein.fasta dominios")
+
+

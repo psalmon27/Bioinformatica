@@ -1,0 +1,481 @@
+LOCUS       NM_002529               2669 bp    mRNA    linear   PRI 27-OCT-2022
+DEFINITION  Homo sapiens neurotrophic receptor tyrosine kinase 1 (NTRK1),
+            transcript variant 2, mRNA.
+ACCESSION   NM_002529 NM_001007204
+VERSION     NM_002529.4
+KEYWORDS    RefSeq; MANE Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2669)
+  AUTHORS   Doan C, Aouizerat BE, Ye Y, Dang D, Asam K, Bhattacharya A, Howard
+            T, Patel YK, Viet DT, Figueroa JD, Zhong JF, Thomas CM, Morlandt
+            AB, Yu G, Callahan NF, Allen CT, Grandhi A, Herford AS, Walker PC,
+            Nguyen K, Kidd SC, Lee SC, Inman JC, Slater JM and Viet CT.
+  TITLE     Neurotrophin Pathway Receptors NGFR and TrkA Control Perineural
+            Invasion, Metastasis, and Pain in Oral Cancer
+  JOURNAL   Adv Biol (Weinh) 6 (9), e2200190 (2022)
+   PUBMED   35925599
+  REMARK    GeneRIF: Neurotrophin Pathway Receptors NGFR and TrkA Control
+            Perineural Invasion, Metastasis, and Pain in Oral Cancer.
+REFERENCE   2  (bases 1 to 2669)
+  AUTHORS   Fang CN, Tan HQ, Song AB, Jiang N, Liu QR and Song T.
+  TITLE     NGF/TrkA promotes the vitality, migration and adhesion of bone
+            marrow stromal cells in hypoxia by regulating the Nrf2 pathway
+  JOURNAL   Metab Brain Dis 37 (6), 2017-2026 (2022)
+   PUBMED   35579787
+  REMARK    GeneRIF: NGF/TrkA promotes the vitality, migration and adhesion of
+            bone marrow stromal cells in hypoxia by regulating the Nrf2
+            pathway.
+REFERENCE   3  (bases 1 to 2669)
+  AUTHORS   Salokas K, Liu X, Ohman T, Chowdhury I, Gawriyski L, Keskitalo S
+            and Varjosalo M.
+  TITLE     Physical and functional interactome atlas of human receptor
+            tyrosine kinases
+  JOURNAL   EMBO Rep 23 (6), e54041 (2022)
+   PUBMED   35384245
+REFERENCE   4  (bases 1 to 2669)
+  AUTHORS   Moraes BC, Ribeiro-Filho HV, Roldao AP, Toniolo EF, Carretero GPB,
+            Sgro GG, Batista FAH, Berardi DE, Oliveira VRS, Tomasin R, Vieceli
+            FM, Pramio DT, Cardoso AB, Figueira ACM, Farah SC, Devi LA, Dale
+            CS, de Oliveira PSL and Schechtman D.
+  TITLE     Structural analysis of TrkA mutations in patients with congenital
+            insensitivity to pain reveals PLCgamma as an analgesic drug target
+  JOURNAL   Sci Signal 15 (731), eabm6046 (2022)
+   PUBMED   35471943
+  REMARK    GeneRIF: Structural analysis of TrkA mutations in patients with
+            congenital insensitivity to pain reveals PLCgamma as an analgesic
+            drug target.
+REFERENCE   5  (bases 1 to 2669)
+  AUTHORS   Schon,K.R., Parker,A.P.J. and Woods,C.G.
+  TITLE     Congenital Insensitivity to Pain Overview
+  JOURNAL   (in) Adam MP, Everman DB, Mirzaa GM, Pagon RA, Wallace SE, Bean
+            LJH, Gripp KW and Amemiya A (Eds.);
+            GENEREVIEWS((R));
+            (1993)
+   PUBMED   29419974
+REFERENCE   6  (bases 1 to 2669)
+  AUTHORS   Indo,Y.
+  TITLE     NTRK1 Congenital Insensitivity to Pain with Anhidrosis
+  JOURNAL   (in) Adam MP, Everman DB, Mirzaa GM, Pagon RA, Wallace SE, Bean
+            LJH, Gripp KW and Amemiya A (Eds.);
+            GENEREVIEWS((R));
+            (1993)
+   PUBMED   20301726
+REFERENCE   7  (bases 1 to 2669)
+  AUTHORS   Loeb DM, Tsao H, Cobb MH and Greene LA.
+  TITLE     NGF and other growth factors induce an association between ERK1 and
+            the NGF receptor, gp140prototrk
+  JOURNAL   Neuron 9 (6), 1053-1065 (1992)
+   PUBMED   1463607
+REFERENCE   8  (bases 1 to 2669)
+  AUTHORS   Jing S, Tapley P and Barbacid M.
+  TITLE     Nerve growth factor mediates signal transduction through trk
+            homodimer receptors
+  JOURNAL   Neuron 9 (6), 1067-1079 (1992)
+   PUBMED   1281417
+REFERENCE   9  (bases 1 to 2669)
+  AUTHORS   Greco A, Pierotti MA, Bongarzone I, Pagliardini S, Lanzi C and
+            Della Porta G.
+  TITLE     TRK-T1 is a novel oncogene formed by the fusion of TPR and TRK
+            genes in human papillary thyroid carcinomas
+  JOURNAL   Oncogene 7 (2), 237-242 (1992)
+   PUBMED   1532241
+REFERENCE   10 (bases 1 to 2669)
+  AUTHORS   Schneider R and Schweiger M.
+  TITLE     A novel modular mosaic of cell adhesion motifs in the extracellular
+            domains of the neurogenic trk and trkB tyrosine kinase receptors
+  JOURNAL   Oncogene 6 (10), 1807-1811 (1991)
+   PUBMED   1656363
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AL158169.17, M23102.1,
+            BC062580.1 and X06704.1.
+            On Aug 13, 2020 this sequence version replaced NM_002529.3.
+            
+            Summary: This gene encodes a member of the neurotrophic tyrosine
+            kinase receptor (NTKR) family. This kinase is a membrane-bound
+            receptor that, upon neurotrophin binding, phosphorylates itself and
+            members of the MAPK pathway. The presence of this kinase leads to
+            cell differentiation and may play a role in specifying sensory
+            neuron subtypes. Mutations in this gene have been associated with
+            congenital insensitivity to pain, anhidrosis, self-mutilating
+            behavior, cognitive disability and cancer. Alternate
+            transcriptional splice variants of this gene have been found, but
+            only three have been characterized to date. [provided by RefSeq,
+            Jul 2008].
+            
+            Transcript Variant: This variant (2) represents the longest
+            transcript and encodes the longest isoform (2).
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: BC062580.1, AK312704.1 [ECO:0000332]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            MANE Ensembl match     :: ENST00000524377.7/ ENSP00000431418.1
+            RefSeq Select criteria :: based on manual assertion, conservation,
+                                      expression, longest protein
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: complete on the 3' end.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-14                AL158169.17        50893-50906
+            15-71               M23102.1           65-121
+            72-2552             BC062580.1         1-2481
+            2553-2669           X06704.1           1442-1558
+FEATURES             Location/Qualifiers
+     source          1..2669
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="1"
+                     /map="1q23.1"
+     gene            1..2669
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="neurotrophic receptor tyrosine kinase 1"
+                     /db_xref="GeneID:4914"
+                     /db_xref="HGNC:HGNC:8031"
+                     /db_xref="MIM:191315"
+     exon            1..282
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             71..2461
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /EC_number="2.7.10.1"
+                     /note="isoform 2 precursor is encoded by transcript
+                     variant 2; Oncogene TRK; tyrosine kinase receptor A; high
+                     affinity nerve growth factor receptor; TRK1-transforming
+                     tyrosine kinase protein; gp140trk; tropomyosin-related
+                     kinase A; neurotrophic tyrosine kinase, receptor, type 1"
+                     /codon_start=1
+                     /product="high affinity nerve growth factor receptor
+                     isoform 2 precursor"
+                     /protein_id="NP_002520.2"
+                     /db_xref="CCDS:CCDS1161.1"
+                     /db_xref="GeneID:4914"
+                     /db_xref="HGNC:HGNC:8031"
+                     /db_xref="MIM:191315"
+                     /translation="MLRGGRRGQLGWHSWAAGPGSLLAWLILASAGAAPCPDACCPHG
+                     SSGLRCTRDGALDSLHHLPGAENLTELYIENQQHLQHLELRDLRGLGELRNLTIVKSG
+                     LRFVAPDAFHFTPRLSRLNLSFNALESLSWKTVQGLSLQELVLSGNPLHCSCALRWLQ
+                     RWEEEGLGGVPEQKLQCHGQGPLAHMPNASCGVPTLKVQVPNASVDVGDDVLLRCQVE
+                     GRGLEQAGWILTELEQSATVMKSGGLPSLGLTLANVTSDLNRKNVTCWAENDVGRAEV
+                     SVQVNVSFPASVQLHTAVEMHHWCIPFSVDGQPAPSLRWLFNGSVLNETSFIFTEFLE
+                     PAANETVRHGCLRLNQPTHVNNGNYTLLAANPFGQASASIMAAFMDNPFEFNPEDPIP
+                     VSFSPVDTNSTSGDPVEKKDETPFGVSVAVGLAVFACLFLSTLLLVLNKCGRRNKFGI
+                     NRPAVLAPEDGLAMSLHFMTLGGSSLSPTEGKGSGLQGHIIENPQYFSDACVHHIKRR
+                     DIVLKWELGEGAFGKVFLAECHNLLPEQDKMLVAVKALKEASESARQDFQREAELLTM
+                     LQHQHIVRFFGVCTEGRPLLMVFEYMRHGDLNRFLRSHGPDAKLLAGGEDVAPGPLGL
+                     GQLLAVASQVAAGMVYLAGLHFVHRDLATRNCLVGQGLVVKIGDFGMSRDIYSTDYYR
+                     VGGRTMLPIRWMPPESILYRKFTTESDVWSFGVVLWEIFTYGKQPWYQLSNTEAIDCI
+                     TQGRELERPRACPPEVYAIMRGCWQREPQQRHSIKDVHARLQALAQAPPVYLDVLG"
+     sig_peptide     71..166
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="/evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4)"
+     mat_peptide     167..2458
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /product="High affinity nerve growth factor receptor.
+                     /id=PRO_0000016724"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04629.4)"
+     misc_feature    269..271
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); glycosylation site"
+     misc_feature    338..409
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04629.4);
+                     Region: LRR 1"
+     misc_feature    353..355
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000269|PubMed:17196528; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); glycosylation site"
+     misc_feature    416..481
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04629.4);
+                     Region: LRR 2"
+     misc_feature    431..433
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000269|PubMed:17196528; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); glycosylation site"
+     misc_feature    632..634
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000269|PubMed:17196528,
+                     ECO:0007744|PDB:2IFG; propagated from UniProtKB/Swiss-Prot
+                     (P04629.4); glycosylation site"
+     misc_feature    674..676
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); glycosylation site"
+     misc_feature    827..829
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); glycosylation site"
+     misc_feature    854..856
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000269|PubMed:17196528,
+                     ECO:0007744|PDB:2IFG; propagated from UniProtKB/Swiss-Prot
+                     (P04629.4); glycosylation site"
+     misc_feature    911..913
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000269|PubMed:17196528,
+                     ECO:0007744|PDB:2IFG; propagated from UniProtKB/Swiss-Prot
+                     (P04629.4); glycosylation site"
+     misc_feature    1022..1024
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); glycosylation site"
+     misc_feature    1037..1039
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); glycosylation site"
+     misc_feature    1082..1084
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); glycosylation site"
+     misc_feature    1142..1144
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000269|PubMed:17196528,
+                     ECO:0007744|PDB:2IFG; propagated from UniProtKB/Swiss-Prot
+                     (P04629.4); glycosylation site"
+     misc_feature    1262..1267
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="Breakpoint for translocation to form TRK and
+                     TRK-T3; propagated from UniProtKB/Swiss-Prot (P04629.4);
+                     other site"
+     misc_feature    1271..1273
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="N-linked (GlcNAc...) asparagine.
+                     /evidence=ECO:0000255; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); glycosylation site"
+     misc_feature    1340..1387
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04629.4);
+                     transmembrane region"
+     misc_feature    1475..1540
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04629.4);
+                     Region: Interaction with SQSTM1. /evidence=ECO:0000250"
+     misc_feature    1526..1528
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="Breakpoint for translocation to form TRK-T1;
+                     propagated from UniProtKB/Swiss-Prot (P04629.4); other
+                     site"
+     misc_feature    1556..1558
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="Interaction with SHC1; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); other site"
+     misc_feature    1556..1558
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="Phosphotyrosine, by autocatalysis.
+                     /evidence=ECO:0000269|PubMed:15488758,
+                     ECO:0000269|PubMed:27676246, ECO:0000269|PubMed:8155326;
+                     propagated from UniProtKB/Swiss-Prot (P04629.4);
+                     phosphorylation site"
+     misc_feature    1679..1693
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04629.4);
+                     Region: DXXLL. /evidence=ECO:0000269|PubMed:26446845"
+     misc_feature    1889..1903
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04629.4);
+                     Region: DXXLL. /evidence=ECO:0000269|PubMed:26446845"
+     misc_feature    2096..2098
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="Phosphotyrosine, by autocatalysis.
+                     /evidence=ECO:0000269|PubMed:8155326; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); phosphorylation site"
+     misc_feature    2108..2110
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="Phosphotyrosine, by autocatalysis.
+                     /evidence=ECO:0000269|PubMed:15488758,
+                     ECO:0000269|PubMed:8155326; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); phosphorylation site"
+     misc_feature    2111..2113
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="Phosphotyrosine, by autocatalysis.
+                     /evidence=ECO:0000269|PubMed:15488758,
+                     ECO:0000269|PubMed:8155326; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); phosphorylation site"
+     misc_feature    2441..2443
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="Interaction with PLCG1; propagated from
+                     UniProtKB/Swiss-Prot (P04629.4); other site"
+     misc_feature    2441..2443
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="Phosphotyrosine, by autocatalysis.
+                     /evidence=ECO:0000269|PubMed:15488758,
+                     ECO:0000269|PubMed:7510697, ECO:0000269|PubMed:8155326;
+                     propagated from UniProtKB/Swiss-Prot (P04629.4);
+                     phosphorylation site"
+     exon            283..357
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            358..429
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            430..498
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            499..644
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            645..787
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            788..920
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            921..1247
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1248..1265
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1266..1321
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1322..1424
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1425..1571
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1572..1702
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1703..1875
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1876..2116
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2117..2275
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2276..2669
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      2650..2655
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="hexamer: ATTATA"
+     polyA_site      2669
+                     /gene="NTRK1"
+                     /gene_synonym="MTC; p140-TrkA; TRK; Trk-A; TRK1; TRKA"
+                     /note="major polyA site"
+ORIGIN      
+        1 ggaggcctgg cagctgcagc tgggagcgca cagacggctg ccccgcctga gcgaggcggg
+       61 cgccgccgcg atgctgcgag gcggacggcg cgggcagctt ggctggcaca gctgggctgc
+      121 ggggccgggc agcctgctgg cttggctgat actggcatct gcgggcgccg caccctgccc
+      181 cgatgcctgc tgcccccacg gctcctcggg actgcgatgc acccgggatg gggccctgga
+      241 tagcctccac cacctgcccg gcgcagagaa cctgactgag ctctacatcg agaaccagca
+      301 gcatctgcag catctggagc tccgtgatct gaggggcctg ggggagctga gaaacctcac
+      361 catcgtgaag agtggtctcc gtttcgtggc gccagatgcc ttccatttca ctcctcggct
+      421 cagtcgcctg aatctctcct tcaacgctct ggagtctctc tcctggaaaa ctgtgcaggg
+      481 cctctcctta caggaactgg tcctgtcggg gaaccctctg cactgttctt gtgccctgcg
+      541 ctggctacag cgctgggagg aggagggact gggcggagtg cctgaacaga agctgcagtg
+      601 tcatgggcaa gggcccctgg cccacatgcc caatgccagc tgtggtgtgc ccacgctgaa
+      661 ggtccaggtg cccaatgcct cggtggatgt gggggacgac gtgctgctgc ggtgccaggt
+      721 ggaggggcgg ggcctggagc aggccggctg gatcctcaca gagctggagc agtcagccac
+      781 ggtgatgaaa tctgggggtc tgccatccct ggggctgacc ctggccaatg tcaccagtga
+      841 cctcaacagg aagaacgtga cgtgctgggc agagaacgat gtgggccggg cagaggtctc
+      901 tgttcaggtc aacgtctcct tcccggccag tgtgcagctg cacacggcgg tggagatgca
+      961 ccactggtgc atccccttct ctgtggatgg gcagccggca ccgtctctgc gctggctctt
+     1021 caatggctcc gtgctcaatg agaccagctt catcttcact gagttcctgg agccggcagc
+     1081 caatgagacc gtgcggcacg ggtgtctgcg cctcaaccag cccacccacg tcaacaacgg
+     1141 caactacacg ctgctggctg ccaacccctt cggccaggcc tccgcctcca tcatggctgc
+     1201 cttcatggac aaccctttcg agttcaaccc cgaggacccc atccctgtct ccttctcgcc
+     1261 ggtggacact aacagcacat ctggagaccc ggtggagaag aaggacgaaa caccttttgg
+     1321 ggtctcggtg gctgtgggcc tggccgtctt tgcctgcctc ttcctttcta cgctgctcct
+     1381 tgtgctcaac aaatgtggac ggagaaacaa gtttgggatc aaccgcccgg ctgtgctggc
+     1441 tccagaggat gggctggcca tgtccctgca tttcatgaca ttgggtggca gctccctgtc
+     1501 ccccaccgag ggcaaaggct ctgggctcca aggccacatc atcgagaacc cacaatactt
+     1561 cagtgatgcc tgtgttcacc acatcaagcg ccgggacatc gtgctcaagt gggagctggg
+     1621 ggagggcgcc tttgggaagg tcttccttgc tgagtgccac aacctcctgc ctgagcagga
+     1681 caagatgctg gtggctgtca aggcactgaa ggaggcgtcc gagagtgctc ggcaggactt
+     1741 ccagcgtgag gctgagctgc tcaccatgct gcagcaccag cacatcgtgc gcttcttcgg
+     1801 cgtctgcacc gagggccgcc ccctgctcat ggtctttgag tatatgcggc acggggacct
+     1861 caaccgcttc ctccgatccc atggacctga tgccaagctg ctggctggtg gggaggatgt
+     1921 ggctccaggc cccctgggtc tggggcagct gctggccgtg gctagccagg tcgctgcggg
+     1981 gatggtgtac ctggcgggtc tgcattttgt gcaccgggac ctggccacac gcaactgtct
+     2041 agtgggccag ggactggtgg tcaagattgg tgattttggc atgagcaggg atatctacag
+     2101 caccgactat taccgtgtgg gaggccgcac catgctgccc attcgctgga tgccgcccga
+     2161 gagcatcctg taccgtaagt tcaccaccga gagcgacgtg tggagcttcg gcgtggtgct
+     2221 ctgggagatc ttcacctacg gcaagcagcc ctggtaccag ctctccaaca cggaggcaat
+     2281 cgactgcatc acgcagggac gtgagttgga gcggccacgt gcctgcccac cagaggtcta
+     2341 cgccatcatg cggggctgct ggcagcggga gccccagcaa cgccacagca tcaaggatgt
+     2401 gcacgcccgg ctgcaagccc tggcccaggc acctcctgtc tacctggatg tcctgggcta
+     2461 gggggccggc ccaggggctg ggagtggtta gccggaatac tggggcctgc cctcagcatc
+     2521 ccccatagct cccagcagcc ccagggtgat ctcaaagtat ctaattcacc ctcagcatgt
+     2581 gggaagggac aggtgggggc tgggagtaga ggatgttcct gcttctctag gcaaggtccc
+     2641 gtcatagcaa ttatatttat tatcccttg
+//
+

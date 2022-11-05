@@ -103,7 +103,7 @@ DNA.seq=diego
 SeqIO.write(DNA,"protein.fasta","fasta")
 
 #Blast
-callblast("protein.fasta")
+#callblast("protein.fasta")
 
 #MSA 
 

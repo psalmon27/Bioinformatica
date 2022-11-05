@@ -110,7 +110,7 @@ SeqIO.write(DNA,"protein.fasta","fasta")
 MSA("secuencias.fasta")
 
 #Uso EMBOSS (función getorf) para calcular los ORFs
-os.system("getorf NTRK1.gb ORFs.fasta")
+os.system("getorf NTRK1.gb ORFs.fasta -find=1")
 
 #Comparo con prosite. Para eso uso las funciones de EMBOSS prosextract y patmatmotifs
 os.system("prosextract ./")

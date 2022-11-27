@@ -1,7 +1,17 @@
+#MÓDULOS y LIBRERÍAS
+
+
 from Bio import SeqIO
 from Bio.Blast import NCBIWWW
+from Bio.Blast import NCBIXML
 from Bio.Align.Applications import MuscleCommandline
 import os
+from os import remove
+from os import path
+import configparser
+
+#FUNCIONES
+
 
 #Recibe una secuencia de ARN y genera los dos ORF que faltan (2 y 3) y los traduce a proteina. RECORDAR que el archivo que importamos nos da la info para el primer ORF.
 def ORFfinder(sec):
@@ -38,13 +48,17 @@ def winner(lista):
 			l=len(lista[i])
 	return messi
 
-def callblast(archivo):
-    record = SeqIO.read(archivo, format="fasta")
-    result_handle = NCBIWWW.qblast("blastp","nr", record.format('fasta'),descriptions=100,alignments=100) 
+#Ejecuta blast online
+
+def callblast(query,tipo,bd,resultados):
+    record = SeqIO.read(query, format="fasta")
+    result_handle = NCBIWWW.qblast(tipo,bd, record.format('fasta'),descriptions=resultados,alignments=resultados) 
     blast=open('blast.xml','w')
     blast.write(result_handle.read())
     blast.close()
     return 
+
+#MSA Muscle
 
 def MSA(archivo):
 	#Creo la variable con las alineaciones
@@ -63,8 +77,55 @@ def MSA(archivo):
 	seq_aln.close()
 	return 
 
+#Buscador de patterns
+
+def buscador(pattern,query):
+
+	#Abro el archivo XML donde voy a realizar la búsqueda
+	archivo=open(query,"r")
+	archivo_guardado= NCBIXML.parse(archivo)
+	item=next(archivo_guardado)
+
+	#En caso de que se haya ya ejecutado el script borro el archivo Ex4.txt para que se cree uno nuevo
+	if path.exists('hits.txt'):
+	    remove('hits.txt')
+
+	#Busco (no diferencia entre mayúsculas y minúsculas) y guardo en el archivo Ex4
+	for alignment in item.alignments:
+		  for hsp in alignment.hsps:
+		      if alignment.hit_def.find(pattern.casefold()) != -1:
+		          Ex4=open('hits.txt','a')
+		          Ex4.write('****Alignment****')
+		          Ex4.write("\n")
+		          Ex4.write('sequence: ')
+		          Ex4.write(alignment.title)
+		          Ex4.write("\n")
+		          Ex4.write('length: ')
+		          Ex4.write(str(alignment.length))
+		          Ex4.write("\n")
+		          Ex4.write('score: ')
+		          Ex4.write(str(hsp.score))
+		          Ex4.write("\n\n")
+		          Ex4.close()
+		          """
+		          Entrez.email = 'agortiz@itba.edu.ar'
+		          handle = Entrez.efetch(db="protein", id=alignment.hit_id, rettype="fasta")
+		          print(handle.read())
+		          """
+
+
+#CÓDIGO PRINCIPAL
+
+
+#Importo archivo de configuración
+configuracion=configparser.ConfigParser()
+configuracion.read('entradas.cfg')
+
+#1: Búsqueda y selección de ORFs
+
 #Importo archivo .gb (es ADN) 
-DNA=SeqIO.read("NTRK1.gb","genbank")
+NTRK1=configuracion['Búsqueda de ORFs']['archivo']+".gb"
+DNA=SeqIO.read(NTRK1,"genbank")
 #Con reverse_complement() genero la cadena de ARN complementaria
 rna_comp=DNA.reverse_complement().seq
 #Transcribo el ADN (cadena lider) a ARN
@@ -100,56 +161,34 @@ diego=winner([op1,op2,op3,op4,op5,op6])
 DNA.seq=diego
 
 #Guardo ambas secuencias en formato fasta
-SeqIO.write(DNA,"protein.fasta","fasta")
+SeqIO.write(DNA,"bestORF.fasta","fasta")
 
-#Blast
-#callblast("protein.fasta")
+#Uso EMBOSS (función getorf) para calcular los ORFs (ejercicio 5)
+os.system("getorf "+NTRK1+" ORFs.fasta -find=1")
 
-#MSA 
+#2. Blast (la función está comentada porque tarda aprox 2 minutos en ejecutarse)
 
-MSA("secuencias.fasta")
+query=configuracion['Blast']['archivo']+".fasta"
+tipo=configuracion['Blast']['tipo']
+bd=configuracion['Blast']['bd']
+resultados=int(configuracion['Blast']['resultados'])
+#callblast(query,tipo,bd,resultados)
 
-#Uso EMBOSS (función getorf) para calcular los ORFs
-os.system("getorf NTRK1.gb ORFs.fasta -find=1")
+#3. MSA 
 
-#Comparo con prosite. Para eso uso las funciones de EMBOSS prosextract y patmatmotifs
+input_msa=configuracion['MSA']['archivo']+".fasta"
+MSA(input_msa)
+
+#4. Dominios
+
+proteina=configuracion['Dominios']['archivo']+".fasta"
+#Comparo la proteína con prosite. Para eso uso las funciones de EMBOSS prosextract y patmatmotifs
 os.system("prosextract ./")
-os.system("patmatmotifs protein.fasta dominios")
+os.system("patmatmotifs "+proteina+" dominios")
 
-#BUSCADOR 
+#5. Búsqueda de pattern
 
-#Ingreso la búsqueda
-a_buscar=input("Ingrese búsqueda:")
-
-#Abro el archivo XML donde voy a realizar la búsqueda
-archivo=open("blast.xml","r")
-archivo_guardado= NCBIXML.parse(archivo)
-item=next(archivo_guardado)
-
-#En caso de que se haya ya ejecutado el script borro el archivo Ex4.txt para que se cree uno nuevo
-if path.exists('Ex4.txt'):
-    remove('Ex4.txt')
-
-#Busco (no diferencia entre mayúsculas y minúsculas) y guardo en el archivo Ex4
-for alignment in item.alignments:
-          for hsp in alignment.hsps:
-              if alignment.hit_def.find(a_buscar.casefold()) != -1:
-                  Ex4=open('Ex4.txt','a')
-                  Ex4.write('****Alignment****')
-                  Ex4.write("\n")
-                  Ex4.write('sequence: ')
-                  Ex4.write(alignment.title)
-                  Ex4.write("\n")
-                  Ex4.write('length: ')
-                  Ex4.write(str(alignment.length))
-                  Ex4.write("\n")
-                  Ex4.write('score: ')
-                  Ex4.write(str(hsp.score))
-                  Ex4.write("\n\n")
-                  Ex4.close()
-                  """
-                  Entrez.email = 'agortiz@itba.edu.ar'
-                  handle = Entrez.efetch(db="protein", id=alignment.hit_id, rettype="fasta")
-                  print(handle.read())
-                  """
-
+#Ejecuto buscador de patterns
+pattern = configuracion['Búsqueda de pattern']['pattern']
+query = configuracion['Búsqueda de pattern']['archivo']+".xml"
+buscador(pattern,query)

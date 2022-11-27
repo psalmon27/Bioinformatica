@@ -116,4 +116,40 @@ os.system("getorf NTRK1.gb ORFs.fasta -find=1")
 os.system("prosextract ./")
 os.system("patmatmotifs protein.fasta dominios")
 
+#BUSCADOR 
+
+#Ingreso la búsqueda
+a_buscar=input("Ingrese búsqueda:")
+
+#Abro el archivo XML donde voy a realizar la búsqueda
+archivo=open("blast.xml","r")
+archivo_guardado= NCBIXML.parse(archivo)
+item=next(archivo_guardado)
+
+#En caso de que se haya ya ejecutado el script borro el archivo Ex4.txt para que se cree uno nuevo
+if path.exists('Ex4.txt'):
+    remove('Ex4.txt')
+
+#Busco (no diferencia entre mayúsculas y minúsculas) y guardo en el archivo Ex4
+for alignment in item.alignments:
+          for hsp in alignment.hsps:
+              if alignment.hit_def.find(a_buscar.casefold()) != -1:
+                  Ex4=open('Ex4.txt','a')
+                  Ex4.write('****Alignment****')
+                  Ex4.write("\n")
+                  Ex4.write('sequence: ')
+                  Ex4.write(alignment.title)
+                  Ex4.write("\n")
+                  Ex4.write('length: ')
+                  Ex4.write(str(alignment.length))
+                  Ex4.write("\n")
+                  Ex4.write('score: ')
+                  Ex4.write(str(hsp.score))
+                  Ex4.write("\n\n")
+                  Ex4.close()
+                  """
+                  Entrez.email = 'agortiz@itba.edu.ar'
+                  handle = Entrez.efetch(db="protein", id=alignment.hit_id, rettype="fasta")
+                  print(handle.read())
+                  """
 

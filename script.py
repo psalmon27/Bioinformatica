@@ -50,9 +50,9 @@ def winner(lista):
 
 #Ejecuta blast online
 
-def callblast(query,tipo,bd,resultados):
+def callblast(query,tipo,bd,resultados,matriz,e_thres):
     record = SeqIO.read(query, format="fasta")
-    result_handle = NCBIWWW.qblast(tipo,bd, record.format('fasta'),descriptions=resultados,alignments=resultados) 
+    result_handle = NCBIWWW.qblast(tipo,bd, record.format('fasta'),descriptions=resultados,alignments=resultados,hitlist_size=resultados,matrix_name=matriz,expect=e_thres) 
     blast=open('blast.xml','w')
     blast.write(result_handle.read())
     blast.close()
@@ -154,6 +154,8 @@ query=configuracion['Blast']['archivo']+".fasta"
 tipo=configuracion['Blast']['tipo']
 bd=configuracion['Blast']['bd']
 resultados=int(configuracion['Blast']['resultados'])
+matriz=(configuracion['Blast']['matriz'])
+e_thres=float(configuracion['Blast']['E umbral'])
 #callblast(query,tipo,bd,resultados)
 
 #3. MSA 

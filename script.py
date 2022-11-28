@@ -58,24 +58,6 @@ def callblast(query,tipo,bd,resultados):
     blast.close()
     return 
 
-#MSA Muscle
-
-def MSA(archivo):
-	#Creo la variable con las alineaciones
-	secuencias_aln=MuscleCommandline(input=archivo)
-
-	#Genero un archivo FASTA del output
-	seq_aln=open('seq_aln.fasta','w')
-	for secuencias_aln in SeqIO.parse(archivo,"fasta"):
-		seq_aln.write(">")
-		seq_aln.write(str(secuencias_aln.id))
-		seq_aln.write(" ")
-		seq_aln.write(str(secuencias_aln.description))
-		seq_aln.write("\n")
-		seq_aln.write(str(secuencias_aln.seq))
-		seq_aln.write("\n")
-	seq_aln.close()
-	return 
 
 #Buscador de patterns
 
@@ -177,7 +159,7 @@ resultados=int(configuracion['Blast']['resultados'])
 #3. MSA 
 
 input_msa=configuracion['MSA']['archivo']+".fasta"
-MSA(input_msa)
+os.system("muscle -in "+input_msa+" -out seq_aln.fasta")
 
 #4. Dominios
 

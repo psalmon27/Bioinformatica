@@ -159,7 +159,7 @@ bd=configuracion['Blast']['bd']
 resultados=int(configuracion['Blast']['resultados'])
 matriz=(configuracion['Blast']['matriz'])
 e_thres=float(configuracion['Blast']['E umbral'])
-callblast(query,tipo,bd,resultados,matriz,e_thres)
+´#callblast(query,tipo,bd,resultados,matriz,e_thres)
 
 #3. MSA 
 

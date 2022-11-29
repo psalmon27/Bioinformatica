@@ -4,7 +4,7 @@
 from Bio import SeqIO
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
-from Bio.Align.Applications import MuscleCommandline
+from Bio import Entrez
 import os
 from os import remove
 from os import path
@@ -70,30 +70,33 @@ def buscador(pattern,query):
 
 	#En caso de que se haya ya ejecutado el script borro el archivo Ex4.txt para que se cree uno nuevo
 	if path.exists('hits.txt'):
-	    remove('hits.txt')
+		   remove('hits.txt')
 
-	#Busco (no diferencia entre mayúsculas y minúsculas) y guardo en el archivo Ex4
+		#Busco (no diferencia entre mayúsculas y minúsculas) y guardo en el archivo Ex4
 	for alignment in item.alignments:
-		  for hsp in alignment.hsps:
-		      if alignment.hit_def.find(pattern.casefold()) != -1:
-		          Ex4=open('hits.txt','a')
-		          Ex4.write('****Alignment****')
-		          Ex4.write("\n")
-		          Ex4.write('sequence: ')
-		          Ex4.write(alignment.title)
-		          Ex4.write("\n")
-		          Ex4.write('length: ')
-		          Ex4.write(str(alignment.length))
-		          Ex4.write("\n")
-		          Ex4.write('score: ')
-		          Ex4.write(str(hsp.score))
-		          Ex4.write("\n\n")
-		          Ex4.close()
-		          """
-		          Entrez.email = 'agortiz@itba.edu.ar'
-		          handle = Entrez.efetch(db="protein", id=alignment.hit_id, rettype="fasta")
-		          print(handle.read())
-		          """
+		for hsp in alignment.hsps:
+			if alignment.hit_def.casefold().find(pattern.casefold()) != -1:
+				Ex4=open('hits.txt','a')
+				Ex4.write('****Alignment****')
+				Ex4.write("\n")
+				Ex4.write('sequence: ')
+				Ex4.write(alignment.title)
+				Ex4.write("\n")
+				Ex4.write('length: ')
+				Ex4.write(str(alignment.length))
+				Ex4.write("\n")
+				Ex4.write('score: ')
+				Ex4.write(str(hsp.score))
+				Ex4.write("\n\n")
+				
+				Ex4.write('FASTA: ')
+				Entrez.email = 'agortiz@itba.edu.ar'
+				handle = Entrez.efetch(db="protein", id=alignment.hit_id, rettype="fasta")
+				Ex4.write(str(handle.read()))
+				Ex4.write("\n\n")
+				Ex4.close()
+				
+	return
 
 
 #CÓDIGO PRINCIPAL
@@ -156,7 +159,7 @@ bd=configuracion['Blast']['bd']
 resultados=int(configuracion['Blast']['resultados'])
 matriz=(configuracion['Blast']['matriz'])
 e_thres=float(configuracion['Blast']['E umbral'])
-#callblast(query,tipo,bd,resultados,matriz,e_thres)
+callblast(query,tipo,bd,resultados,matriz,e_thres)
 
 #3. MSA 
 
